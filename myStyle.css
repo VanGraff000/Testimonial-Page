@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora");
+::selection {
+  background-color: #18181B;
+  color: #D4D4D8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#container {
+  max-width: 1366px;
+  height: 100vh;
+  font-family: "Sora";
+  background-color: #FAFAF9;
+  padding: 6.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+#left_container {
+  flex-direction: column;
+}
+
+.star {
+  background-color: #F5C044;
+  padding: 0.495rem;
+  border-radius: 50%;
+}
+
+h1 {
+  color: #18181B;
+  font-size: 2.25rem;
+}
+
+p {
+  color: #52525A;
+  font-size: 1.25rem;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+.list .list_item {
+  color: #52525A;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.list_item::before {
+  content: url(assets/img/Done_ring_round_fill.svg);
+  vertical-align: middle;
+  margin: 0.25rem;
+}
+
+#right_container {
+  width: 50%;
+}
+
+.card {
+  box-shadow: 0 0 50px #D4D4D8;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 400px;
+  margin-left: 10rem;
+  margin-bottom: 1rem;
+}
+.card .card_head {
+  display: flex;
+  gap: 10px;
+}
+
+.card_meta {
+  box-shadow: 0 0 50px #D4D4D8;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 400px;
+}
+.card_meta .card_head {
+  display: flex;
+  gap: 10px;
+}
+
+.card_desc {
+  font-size: 1rem;
+}
+
+h3 {
+  color: #18181B;
+}
+
+@media screen and (width < 768px) {
+  #container {
+    flex-direction: column;
+    margin-top: 10rem;
+  }
+  .card {
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+  }
+}
+
+/*# sourceMappingURL=myStyle.css.map */
